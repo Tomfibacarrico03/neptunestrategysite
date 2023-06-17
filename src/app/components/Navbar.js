@@ -4,21 +4,11 @@ export default function Navbar() {
   return (
     <nav>
       <ul>
-        <a href="">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>About us</li>
-        </a>
-        <a href="">
-          <li>Services</li>
-        </a>
-        <a href="">
-          <li>Team</li>
-        </a>
-        <a href="">
-          <li>Contacts</li>
-        </a>
+        <li><a href="">Home    </a></li>    
+        <li><a href="">About us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Team    </a></li>    
+        <li><a href="">Contacts</a></li>
       </ul>
     </nav>
   );

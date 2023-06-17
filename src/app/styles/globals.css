@@ -1,6 +1,6 @@
 :root {
   --max-width: 90vw;
-  --border-radius: 12px;
+  --border-radius: 10px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -8,7 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --color-button-hover:#a8a8a885;
+  --color-button-hover: #a8a8a861;
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -102,25 +102,29 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index:1;
 }
 nav ul {
   display: inline-flex;
 }
-nav ul a{
-margin:5px;
-border-radius:var(--border-radius);
-color:white;
+nav ul li {
+  margin: 5px;
+  color: white;
 }
-nav ul a:hover{
-background-color:var(--color-button-hover);
+nav ul a:hover {
+  background-color: var(--color-button-hover);
+  text-decoration:underline;
 }
-nav ul a li{
-padding:5px;
-font-weight:600;
+nav ul a {
+  padding: 5px;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
 }
-section{
-width:var(--max-width);
-height:100vh;
+section {
+  width: var(--max-width);
+  height: 100vh;
 }
 a {
   color: inherit;
